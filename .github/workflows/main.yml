@@ -31,7 +31,7 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         context: .
-        file: ./.github/workflows/asset/Dockerfile
+        file: ./Dockerfile
         platforms: linux/amd64,linux/arm64/v8
         push: true
         tags: nan47/nginx-management
